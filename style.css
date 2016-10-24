@@ -1,11 +1,89 @@
+html { 
+  	background: url("https://drscdn.500px.org/photo/71455917/m%3D2048/cfe3018ad2afd04616734ad876935c19") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+}
+
 body {
 	width: 100%;
 }
 
 h1, h2, h3 {
-	font-family: "Playfair Display", serif;
+	font-family: 'BenchNine', sans-serif;
+	font-size: 3em;
+	color: rgba(240, 240, 240, 0.9);
 }
 
 p {
-	font-family: "Raleway", sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.5em;
+	color: rgba(240, 240, 240, 0.9);
 }
+
+li {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1em;
+	color: rgba(240, 240, 240, 0.9);
+	list-style: none;
+	margin: 30px;
+	display: inline;
+}
+
+a {
+	color: rgba(240, 240, 240, 0.9);
+	text-decoration: none;
+}
+
+a:hover {
+	color: grey;
+	transition: 0.2s;
+}
+
+hr {
+	color: rgba(240, 240, 240, 0.9);
+}
+
+#title {
+  	position: absolute;
+	float: left;
+	left: 10%;
+	transform: translateY(-150%);
+}
+
+#menu {
+	position: absolute;
+	float: right;
+	right: 10%;
+}
+
+#test {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1024px) {
+	body {
+	    background-size: 100% auto;
+	}
+
+	h1, h2, h3 {
+		font-size: 3.25em;
+	}
+
+	p, a {
+		font-size: 2.5em;
+	}
+
+	#title {
+		transform: translateY(-100%);
+	}
+}
+
+
+
+
