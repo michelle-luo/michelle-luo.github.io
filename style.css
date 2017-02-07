@@ -1,38 +1,51 @@
 html {
-	background-color: rgb(70, 92, 119);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-	background-size: cover;
-	overflow: hidden;
+	background-color: rgb(130, 151, 188);
 }
 
 body {
 	width: 100%;
 }
 
-h1, h2, h3 {
-	font-family: 'Open Sans Condensed', 'Comic Sans MS', sans-serif;
+h1 {
+	font-family: 'Open Sans Condensed', 'Helvetica Neue Light', sans-serif;
 	font-weight: 100;
-	font-size: 3em;
+	font-size: 36px;
+	color: rgba(240, 240, 240, 0.9);
+}
+
+h2 {
+	font-family: 'Open Sans Condensed', 'Helvetica Neue Light', sans-serif;
+	font-weight: 100;
+	font-size: 30px;
+	color: rgba(240, 240, 240, 0.9);
+}
+
+h3 {
+	font-family: 'Open Sans Condensed', 'Helvetica Neue Light', sans-serif;
+	font-weight: 100;
+	font-size: 24px;
 	color: rgba(240, 240, 240, 0.9);
 }
 
 p {
-	font-family: 'Open Sans Condensed', 'Comic Sans MS', sans-serif;
+	font-family: 'Open Sans Condensed', 'Helvetica Neue Light', sans-serif;
 	font-weight: 100;
-	font-size: 1.5em;
+	font-size: 18px;
 	color: rgba(240, 240, 240, 0.9);
 }
 
 li {
-	font-family: 'Open Sans Condensed', 'Comic Sans MS', sans-serif;
-	font-weight: 100;
-	font-size: 1.5em;
 	color: rgba(240, 240, 240, 0.9);
-	list-style: none;
-	margin: 30px;
+	list-style-type: square;
+}
+
+.menu-items {
+	font-family: 'Open Sans Condensed', 'Helvetica Neue Light', sans-serif;
+	font-size: 1.5em;
 	display: inline;
+	padding: 30px;
+	list-style-type: none;
+	list-style-position: inside;
 }
 
 a {
@@ -41,28 +54,37 @@ a {
 }
 
 a:hover {
-	color: grey;
+	color: rgb(198, 192, 177);
 	transition: 0.2s;
 }
 
 hr {
 	color: rgba(240, 240, 240, 0.9);
 }
+/*
+* {
+	border: 1px solid white;
+}
+*/
 
-#title {
+.header h1 {
+	margin: 10px 0px;
+}
+
+.home-title {
   	position: absolute;
 	float: left;
 	left: 15%;
 	transform: translateY(-150%);
 }
 
-#menu {
+.home-menu {
 	position: absolute;
 	float: right;
 	right: 15%;
 }
 
-#content {
+.home-content {
   position: absolute;
   width: 100%;
   top: 50%;
@@ -70,23 +92,76 @@ hr {
   transform: translate(-50%, -50%);
 }
 
-/*
-@media screen and (max-width: 1024px) {
-	body {
-	    background-size: 100% auto;
-	}
-
-	h1, h2, h3 {
-
-	}
-
-	p, a {
-	}
-
-	#title {
-		position: absolute;
-		float: center;
-		transform: translateX(50%, -150%);
-	}
+.header {
+	margin: auto;
+	width: 60%;
 }
-*/
+
+.home {
+	float: left;
+}
+
+.bio-title, .resume-title, .contact-title {
+	float: right;
+}
+
+.bio-content, .resume-content, .contact-content {
+	padding: 70px 30px;
+	margin: auto;
+	width: 60%;
+}
+
+#me {
+	width: 100%;
+	padding: 10px;
+}
+
+#bio {
+	text-align: center;
+}
+
+.resume-section h2 {
+	margin: 5px 0px;
+}
+.resume-section p {
+	margin: 3px;
+}
+
+.resume-section ul {
+	margin: 5px;
+}
+
+.resume-details {
+	font-size: 1.5em;
+	margin: 0;
+}
+
+.employer {
+	display: inline;
+}
+
+.location {
+	display: inline;
+	float: right;
+}
+
+.role {
+	display: inline;
+}
+
+.role-time {
+	display: inline;
+	float: right;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	margin: auto;
+	width: 100%;
+}
+
+
+
+
+
