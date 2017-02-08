@@ -108,7 +108,7 @@ hr {
 .bio-content, .resume-content, .contact-content {
 	padding: 70px 30px;
 	margin: auto;
-	width: 60%;
+	max-width: 60%;
 }
 
 #me {
@@ -121,14 +121,14 @@ hr {
 }
 
 .resume-section h2 {
-	margin: 5px 0px;
+	margin: 7px 0px 3px 0px;
 }
 .resume-section p {
 	margin: 3px;
 }
 
 .resume-section ul {
-	margin: 5px;
+	margin: 5px 3px;
 }
 
 .resume-details {
@@ -152,6 +152,11 @@ hr {
 .role-time {
 	display: inline;
 	float: right;
+	text-align: right;
+}
+
+.role-description {
+	list-style-type: none;
 }
 
 .footer {
